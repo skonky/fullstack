@@ -1,0 +1,15 @@
+type Mutation {
+  deleteExample(id: String!): Example
+  createExample(createExampleArgs: CreateExampleArgs!): Example
+}
+mutation deleteExample($id: String!) {
+  deleteExample(id: $id) {
+    id
+  }
+}
+
+mutation createExample($createExampleArgs: CreateExampleArgs!) {
+  createExample(createExampleArgs: $createExampleArgs) {
+    id
+  }
+}

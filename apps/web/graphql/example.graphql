@@ -1,0 +1,21 @@
+query example {
+  example {
+    id
+    name
+    createdAt
+    published
+  }
+}
+
+mutation deleteExample($deleteExampleId: String!) {
+  deleteExample(id: $deleteExampleId) {
+    name
+    id
+  }
+}
+
+mutation createExample($createExampleArgs: CreateExampleArgs!) {
+  createExample(createExampleArgs: $createExampleArgs) {
+    id
+  }
+}

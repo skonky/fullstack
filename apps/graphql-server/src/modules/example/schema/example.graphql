@@ -1,0 +1,12 @@
+type Example {
+  id: String!
+  name: String!
+  published: Boolean!
+  createdAt: String!
+  updatedAt: String!
+}
+
+input CreateExampleArgs {
+  name: String!
+  published: Boolean
+}
