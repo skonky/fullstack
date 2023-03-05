@@ -8,7 +8,7 @@ export default function Navbar() {
       name: "Home",
     },
     {
-      url: "https://github.com/frank-selhorst",
+      url: "https://github.com/skonky",
       target: "_blank",
       name: "GitHub",
     },
