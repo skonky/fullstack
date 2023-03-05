@@ -1,6 +1,4 @@
-# Turborepo starter
-
-This is an official pnpm starter turborepo.
+# Fullstack Monorepo Setup
 
 ## What's inside?
 
@@ -8,9 +6,11 @@ This turborepo uses [pnpm](https://pnpm.io) as a package manager. It includes th
 
 ### Apps and Packages
 
-- `docs`: a [Next.js](https://nextjs.org/) app
-- `web`: another [Next.js](https://nextjs.org/) app
-- `ui`: a stub React component library shared by both `web` and `docs` applications
+- `graphql-server`: a GraphQL Server running Apollo and has a codegen setup
+- `next-web`: A Next.js frontend that uses Apollo, Codegen and TailwindCSS
+- `rescript-web`: A Next.js frontend written in Rescript and makes use of TailwindCSS no Apollo implementation yet.
+- `rest-api`: A Nest.js REST api that follows the openapi standard so it can generate TypeScript DTO's for the graphql-server
+- `ui`: WIP: A component library that next-web uses
 - `eslint-config-custom`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
 - `tsconfig`: `tsconfig.json`s used throughout the monorepo
 
@@ -18,7 +18,7 @@ Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
 
 ### Utilities
 
-This turborepo has some additional tools already setup for you:
+This turborepo has some tools already setup for you:
 
 - [TypeScript](https://www.typescriptlang.org/) for static type checking
 - [ESLint](https://eslint.org/) for code linting
