@@ -160,6 +160,7 @@ importers:
     specifiers:
       '@rescript/react': 0.10.3
       autoprefixer: 10.1.0
+      concurrently: ^7.6.0
       cssnano: 5.0.5
       daisyui: ^2.51.3
       gentype: '4.1'
@@ -178,6 +179,7 @@ importers:
     devDependencies:
       '@rescript/react': 0.10.3_w7o5yyljkiidx2s2nzb26ottzu
       autoprefixer: 10.1.0_postcss@8.2.15
+      concurrently: 7.6.0
       cssnano: 5.0.5_postcss@8.2.15
       daisyui: 2.51.3_2ot6ewsktq7ir7bfu73gnehf6y
       gentype: 4.1.0

@@ -23,7 +23,7 @@ module Navigation = {
 
   @react.component
   let make = () =>
-    <div className="navbar sticky bg-base-300">
+    <div className="navbar sticky top-0 z-10 bg-base-300">
       <div className="flex-1">
         <a className="btn btn-ghost normal-case text-xl"> {title->React.string} </a>
       </div>
@@ -43,5 +43,5 @@ module Navigation = {
 
 @react.component
 let make = (~children) => {
-  <> <Navigation /> <div className="w-full font-base"> <main> children </main> </div> </>
+  <> <Navigation /> <div className="w-full h-full font-base"> <main> children </main> </div> </>
 }

@@ -3,7 +3,7 @@ let intro = "ReScript is a robustly typed language that compiles to efficient an
 let buttonLabel = "Get started"
 
 let default = () =>
-  <div className="hero min-h-screen">
+  <div className="hero h-[calc(100vh_-_4rem)] flex items-center justify-center">
     <div className="hero-content text-center">
       <div className="max-w-md">
         <h1 className="text-5xl font-bold"> {title->React.string} </h1>

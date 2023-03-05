@@ -10,7 +10,7 @@
     "react-dom": "17.0.1"
   },
   "scripts": {
-    "dev": "rescript build -w && next -p 5000",
+    "dev": "concurrently \"next dev -p 5000\" \"rescript build -w\"",
     "debug": "NODE_OPTIONS='--inspect' next",
     "build": "rescript && next build",
     "now-build": "rescript && next build",
@@ -23,13 +23,14 @@
   "devDependencies": {
     "@rescript/react": "0.10.3",
     "autoprefixer": "10.1.0",
+    "concurrently": "^7.6.0",
     "cssnano": "5.0.5",
+    "daisyui": "^2.51.3",
     "gentype": "4.1",
     "next-transpile-modules": "7.1.2",
     "postcss": "8.2.15",
     "postcss-cli": "8.3.1",
     "rescript": "9.1",
-    "tailwindcss": "^3.0.23",
-    "daisyui": "^2.51.3"
+    "tailwindcss": "^3.0.23"
   }
 }

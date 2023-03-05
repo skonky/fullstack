@@ -4,7 +4,7 @@ import * as React from "react";
 
 function $$default(param) {
   return React.createElement("div", {
-              className: "hero min-h-screen"
+              className: "hero h-[calc(100vh_-_4rem)] flex items-center justify-center"
             }, React.createElement("div", {
                   className: "hero-content text-center"
                 }, React.createElement("div", {

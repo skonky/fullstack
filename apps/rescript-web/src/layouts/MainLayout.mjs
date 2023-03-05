@@ -18,7 +18,7 @@ var links = [
 
 function MainLayout$Navigation(Props) {
   return React.createElement("div", {
-              className: "navbar sticky bg-base-300"
+              className: "navbar sticky top-0 z-10 bg-base-300"
             }, React.createElement("div", {
                   className: "flex-1"
                 }, React.createElement("a", {
@@ -42,7 +42,7 @@ function MainLayout$Navigation(Props) {
 function MainLayout(Props) {
   var children = Props.children;
   return React.createElement(React.Fragment, undefined, React.createElement(MainLayout$Navigation, {}), React.createElement("div", {
-                  className: "w-full font-base"
+                  className: "w-full h-full font-base"
                 }, React.createElement("main", undefined, children)));
 }
 
